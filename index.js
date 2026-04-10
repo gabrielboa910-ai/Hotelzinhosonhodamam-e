@@ -92,13 +92,12 @@ function initSmoothScroll() {
             const target = document.querySelector(href);
             if (target) {
                 e.preventDefault();
-                window.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+                window.scrollTo({ top: target.offsetTop - 85, behavior: 'smooth' });
             }
         });
     });
 }
 
-// ===== GALERIA DE IMAGENS COM CARROSSEL =====
 function initGallery() {
     const track = document.getElementById('galleryTrack');
     const slides = document.querySelectorAll('.gallery-slide');
@@ -111,7 +110,6 @@ function initGallery() {
     let currentIndex = 0;
     const totalSlides = slides.length;
     
-    // Criar dots
     for (let i = 0; i < totalSlides; i++) {
         const dot = document.createElement('div');
         dot.classList.add('gallery-dot');
@@ -147,10 +145,8 @@ function initGallery() {
     if (prevBtn) prevBtn.addEventListener('click', prevSlide);
     if (nextBtn) nextBtn.addEventListener('click', nextSlide);
     
-    // Auto slide
     let autoInterval = setInterval(nextSlide, 5000);
     
-    // Pausar auto slide quando passar o mouse
     const galleryContainer = document.querySelector('.gallery-container');
     if (galleryContainer) {
         galleryContainer.addEventListener('mouseenter', () => clearInterval(autoInterval));
@@ -160,4 +156,4 @@ function initGallery() {
     }
 }
 
-console.log('Hotelzinho Sonho da Mamãe - Linhares/ES - Site carregado com sucesso!');
+console.log('Hotelzinho Sonho da Mamãe - Site carregado!');

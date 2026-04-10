@@ -6,7 +6,7 @@
     <title>Hotelzinho Sonho da Mamãe | Cuidado e Educação Infantil - Linhares/ES</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet"index.css" />
+    <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -21,6 +21,7 @@
             <div class="logo">
                 <a href="index.html">
                     <div class="logo-image">
+                        <!-- IMAGEM DA LOGO COM CAMINHO CORRETO -->
                         <img src="sonhodamamae.jpg" alt="Hotelzinho Sonho da Mamãe" class="logo-img" 
                              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                         <div class="logo-placeholder" style="display: none;">
@@ -39,7 +40,7 @@
                     <li><a href="index.html" class="active"><i class="fas fa-home"></i> Início</a></li>
                     <li><a href="#sobre"><i class="fas fa-heart"></i> Sobre</a></li>
                     <li><a href="#servicos"><i class="fas fa-star"></i> Serviços</a></li>
-                    <li><a href="#galeria"><i class="fas fa-images"></i> Nosso Espaço</a></li>
+                    <li><a href="#galeria-animais"><i class="fas fa-paw"></i> Nosso Espaço</a></li>
                     <li><a href="#depoimentos"><i class="fas fa-comments"></i> Depoimentos</a></li>
                     <li><a href="#localizacao"><i class="fas fa-map-marker-alt"></i> Localização</a></li>
                     <li><a href="https://wa.me/5527995054460" class="btn-whatsapp-nav"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
@@ -111,7 +112,7 @@
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3>Segurança Total</h3>
-                    <p>Monitoramento 24h e equipe treinada.</p>
+                    <p>Monitoramento 24h e equipe treinada em primeiros socorros.</p>
                 </div>
                 
                 <div class="highlight-card animate-on-scroll">
@@ -119,7 +120,7 @@
                         <i class="fas fa-user-graduate"></i>
                     </div>
                     <h3>Educação de Qualidade</h3>
-                    <p>Proposta pedagógica inovadora.</p>
+                    <p>Proposta pedagógica inovadora para desenvolvimento infantil.</p>
                 </div>
                 
                 <div class="highlight-card animate-on-scroll" data-direction="right">
@@ -127,7 +128,7 @@
                         <i class="fas fa-heartbeat"></i>
                     </div>
                     <h3>Saúde e Bem-estar</h3>
-                    <p>Acompanhamento nutricional.</p>
+                    <p>Acompanhamento nutricional e atividades físicas diárias.</p>
                 </div>
                 
                 <div class="highlight-card animate-on-scroll">
@@ -135,42 +136,72 @@
                         <i class="fas fa-city"></i>
                     </div>
                     <h3>Referência em Linhares</h3>
-                    <p>O mais querido do Araçá.</p>
+                    <p>O hotelzinho mais querido da região do Araçá.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- GALERIA DE IMAGENS -->
-    <section class="gallery-section" id="galeria">
+    <!-- ===== SEÇÃO COM ANIMAIS ANDANDO E GALERIA DE FOTOS ===== -->
+    <section class="gallery-animals-section" id="galeria-animais">
         <div class="container">
             <div class="section-header animate-on-scroll">
-                <span class="section-subtitle">📸 Um ambiente pensado para seu filho 📸</span>
+                <span class="section-subtitle">🐾 Um ambiente mágico e divertido 🐾</span>
                 <h2>Conheça <span class="highlight">Nosso Espaço</span></h2>
                 <p>Ambientes preparados com muito carinho para receber seu filho</p>
             </div>
 
+            <!-- ANIMAIS ANDANDO (FUNDO ANIMADO) -->
+            <div class="animals-walking">
+                <div class="animal animal-1">
+                    <i class="fas fa-dog"></i>
+                    <span>Cachorrinho</span>
+                </div>
+                <div class="animal animal-2">
+                    <i class="fas fa-cat"></i>
+                    <span>Gatinho</span>
+                </div>
+                <div class="animal animal-3">
+                    <i class="fas fa-frog"></i>
+                    <span>Sapinho</span>
+                </div>
+                <div class="animal animal-4">
+                    <i class="fas fa-kiwi-bird"></i>
+                    <span>Passarinho</span>
+                </div>
+                <div class="animal animal-5">
+                    <i class="fas fa-fish"></i>
+                    <span>Peixinho</span>
+                </div>
+                <div class="animal animal-6">
+                    <i class="fas fa-bug"></i>
+                    <span>Joaninha</span>
+                </div>
+            </div>
+
+            <!-- GALERIA DE IMAGENS DO LUGAR -->
             <div class="gallery-showcase">
                 <div class="gallery-container">
                     <div class="gallery-track" id="galleryTrack">
+                        <!-- ESPAÇO PARA SUAS IMAGENS - SUBSTITUA OS LINKS -->
                         <div class="gallery-slide">
-                            <img src="/public/images/espaco1.jpg" alt="Salas de Atividades" onerror="this.src='https://placehold.co/600x350/7EC8E3/white?text=Salas+de+Atividades'">
+                            <img src="/public/images/espaco1.jpg" alt="Espaço 1 - Salas de Atividades" onerror="this.src='https://placehold.co/600x400/FA7A6E/white?text=Salas+de+Atividades'">
                             <div class="slide-caption">🏠 Salas de Atividades</div>
                         </div>
                         <div class="gallery-slide">
-                            <img src="/public/images/espaco2.jpg" alt="Área Externa" onerror="this.src='https://placehold.co/600x350/7EC8E3/white?text=Área+Externa'">
+                            <img src="/public/images/espaco2.jpg" alt="Espaço 2 - Área Externa" onerror="this.src='https://placehold.co/600x400/FFB4A8/white?text=Área+Externa'">
                             <div class="slide-caption">🌳 Área Externa e Playground</div>
                         </div>
                         <div class="gallery-slide">
-                            <img src="/public/images/espaco3.jpg" alt="Refeitório" onerror="this.src='https://placehold.co/600x350/7EC8E3/white?text=Refeitório'">
+                            <img src="/public/images/espaco3.jpg" alt="Espaço 3 - Refeitório" onerror="this.src='https://placehold.co/600x400/FFC5B8/white?text=Refeitório'">
                             <div class="slide-caption">🍎 Refeitório</div>
                         </div>
                         <div class="gallery-slide">
-                            <img src="/public/images/espaco4.jpg" alt="Sala do Sono" onerror="this.src='https://placehold.co/600x350/7EC8E3/white?text=Sala+do+Sono'">
+                            <img src="/public/images/espaco4.jpg" alt="Espaço 4 - Sala do Sono" onerror="this.src='https://placehold.co/600x400/FCD5CE/white?text=Sala+do+Sono'">
                             <div class="slide-caption">😴 Sala do Sono</div>
                         </div>
                         <div class="gallery-slide">
-                            <img src="/public/images/espaco5.jpg" alt="Banheiro Infantil" onerror="this.src='https://placehold.co/600x350/7EC8E3/white?text=Banheiro+Infantil'">
+                            <img src="/public/images/espaco5.jpg" alt="Espaço 5 - Banheiro Infantil" onerror="this.src='https://placehold.co/600x400/FFF0ED/white?text=Banheiro+Infantil'">
                             <div class="slide-caption">🧼 Banheiro Infantil</div>
                         </div>
                     </div>
@@ -188,7 +219,7 @@
             <div class="about-content">
                 <div class="about-image animate-on-scroll" data-direction="left">
                     <div class="image-frame">
-                        <img src="/public/images/sonhodamamae.jpg" alt="Hotelzinho Sonho da Mamãe" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fas fa-home\'></i><i class=\'fas fa-heart\'></i><i class=\'fas fa-smile\'></i>'">
+                        <img src="sonhodamamae.jpg" alt="Hotelzinho Sonho da Mamãe" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fas fa-home\'></i><i class=\'fas fa-heart\'></i><i class=\'fas fa-smile\'></i>'">
                     </div>
                 </div>
                 
@@ -201,8 +232,9 @@
                     
                     <ul class="about-list">
                         <li><i class="fas fa-check-circle"></i> +4 anos de experiência</li>
-                        <li><i class="fas fa-check-circle"></i> +200 crianças atendidas</li>
+                        <li><i class="fas fa-check-circle"></i> +200 crianças atendidas em Linhares</li>
                         <li><i class="fas fa-check-circle"></i> Ambiente acolhedor e familiar</li>
+                        <li><i class="fas fa-check-circle"></i> Localização privilegiada no Araçá</li>
                     </ul>
                     
                     <a href="https://wa.me/5527995054460" class="btn btn-primary">
@@ -217,7 +249,7 @@
     <section class="testimonials" id="depoimentos">
         <div class="container">
             <div class="section-header animate-on-scroll">
-                <span class="section-subtitle">O que as famílias dizem</span>
+                <span class="section-subtitle">O que as famílias de Linhares dizem</span>
                 <h2>Depoimentos dos <span class="highlight">Nossos Pais</span></h2>
                 <p>Histórias reais de quem confia no nosso trabalho</p>
             </div>
@@ -226,7 +258,7 @@
                 <div class="testimonial active">
                     <div class="testimonial-content">
                         <i class="fas fa-quote-left"></i>
-                        <p>"Meu filho está no Sonho da Mamãe há 2 anos e o desenvolvimento dele é visível. A equipe é extremamente capacitada e carinhosa. Recomendo de olhos fechados!"</p>
+                        <p>"Meu filho está no Sonho da Mamãe há 2 anos e o desenvolvimento dele é visível. A equipe é extremamente capacitada e carinhosa. Recomendo de olhos fechados para todas as mães de Linhares!"</p>
                         <i class="fas fa-quote-right"></i>
                     </div>
                     <div class="testimonial-author">
@@ -235,7 +267,7 @@
                         </div>
                         <div class="author-info">
                             <h4>Mariana Oliveira</h4>
-                            <p>Mãe do Lucas</p>
+                            <p>Mãe do Lucas (3 anos)</p>
                         </div>
                     </div>
                 </div>
@@ -243,7 +275,7 @@
                 <div class="testimonial">
                     <div class="testimonial-content">
                         <i class="fas fa-quote-left"></i>
-                        <p>"Como mãe de primeira viagem, estava muito ansiosa. A equipe me acolheu e hoje vejo minha filha feliz e segura. A estrutura é excelente!"</p>
+                        <p>"Como mãe de primeira viagem, estava muito ansiosa. A equipe do Hotelzinho me acolheu e hoje vejo minha filha feliz e segura. A estrutura é excelente! Melhor do bairro Araçá!"</p>
                         <i class="fas fa-quote-right"></i>
                     </div>
                     <div class="testimonial-author">
@@ -252,7 +284,7 @@
                         </div>
                         <div class="author-info">
                             <h4>Camila Santos</h4>
-                            <p>Mãe da Sofia</p>
+                            <p>Mãe da Sofia (1 ano)</p>
                         </div>
                     </div>
                 </div>
@@ -260,7 +292,7 @@
                 <div class="testimonial">
                     <div class="testimonial-content">
                         <i class="fas fa-quote-left"></i>
-                        <p>"A transparência no dia a dia e a atenção individualizada fazem toda a diferença. Meus dois filhos frequentam e adoram!"</p>
+                        <p>"A transparência no dia a dia e a atenção individualizada fazem toda a diferença. Meus dois filhos frequentam e adoram! O melhor hotelzinho de Linhares!"</p>
                         <i class="fas fa-quote-right"></i>
                     </div>
                     <div class="testimonial-author">
@@ -296,7 +328,7 @@
                 </div>
                 <div class="cta-text">
                     <h2>Fale diretamente conosco!</h2>
-                    <p>Tire suas dúvidas, agende uma visita ou faça uma reserva.</p>
+                    <p>Tire suas dúvidas, agende uma visita ou faça uma reserva pelo WhatsApp.</p>
                 </div>
                 <a href="https://wa.me/5527995054460" class="btn btn-whatsapp" target="_blank">
                     <i class="fab fa-whatsapp"></i> Conversar no WhatsApp
@@ -305,7 +337,7 @@
         </div>
     </section>
 
-    <!-- LOCALIZAÇÃO COM GOOGLE MAPS -->
+    <!-- GOOGLE MAPS - LOCALIZAÇÃO -->
     <section class="location-section" id="localizacao">
         <div class="container">
             <div class="section-header animate-on-scroll">
@@ -333,8 +365,8 @@
                         </div>
                         <div class="location-details">
                             <h3>Horário de Funcionamento</h3>
-                            <p>Segunda a Sexta: 07h às 19h</p>
-                            <p>Sábado: 08h às 13h</p>
+                            <p>Segunda a Sexta: 07h00 às 19h00</p>
+                            <p>Sábado: 08h00 às 13h00</p>
                         </div>
                     </div>
                     
@@ -345,7 +377,7 @@
                         <div class="location-details">
                             <h3>Telefone / WhatsApp</h3>
                             <p>(27) 99505-4460</p>
-                            <p>Clique e fale conosco!</p>
+                            <p>Clique e fale conosco agora!</p>
                         </div>
                     </div>
                 </div>
@@ -354,8 +386,8 @@
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.057873718593!2d-40.055301666259766!3d-19.40019989013672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb839f7f9b5f9e9%3A0x9e8f5c3d2a1b4c7!2sAv.%20Santos%20Dumont%2C%2018%20-%20Ara%C3%A7%C3%A1%2C%20Linhares%20-%20ES%2C%2029901-423!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
                         width="100%" 
-                        height="350" 
-                        style="border:0; border-radius: 20px;" 
+                        height="400" 
+                        style="border:0; border-radius: 24px;" 
                         allowfullscreen="" 
                         loading="lazy">
                     </iframe>
@@ -396,7 +428,7 @@
                         <li><a href="index.html">Início</a></li>
                         <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#servicos">Serviços</a></li>
-                        <li><a href="#galeria">Nosso Espaço</a></li>
+                        <li><a href="#galeria-animais">Nosso Espaço</a></li>
                         <li><a href="#depoimentos">Depoimentos</a></li>
                         <li><a href="#localizacao">Localização</a></li>
                     </ul>
@@ -405,7 +437,7 @@
                 <div class="footer-contact">
                     <h4>Contato</h4>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Av. Santos Dumont, 18</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Santos Dumont, 18 - Araçá</li>
                         <li><i class="fas fa-phone"></i> (27) 99505-4460</li>
                         <li><i class="fas fa-envelope"></i> contato@sonhodamamae.com.br</li>
                     </ul>
@@ -422,7 +454,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; <span id="currentYear"></span> Hotelzinho Sonho da Mamãe - Linhares/ES</p>
+                <p>&copy; <span id="currentYear"></span> Hotelzinho Sonho da Mamãe - Linhares/ES. Todos os direitos reservados.</p>
                 <p class="creator">Created by <span>Gabriel Gonçalves Bôa</span></p>
             </div>
         </div>
